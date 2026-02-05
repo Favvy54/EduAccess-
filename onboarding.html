@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/onboarding.css">
+</head>
+
+<body>
+  <div class="onboarding-container">
+    <div class="welcome-text">
+      <h2>Lets Personalize Your Learning Experience</h2>
+      <p>Tell us about yourself to get started</p>
+    </div>
+    <form action="#" id="onboardingForm">
+
+      <!-- Department Section -->
+      <div class="form-section">
+        <h4 class="section-heading">Select Your Department</h4>
+        <div class="options">
+          <div class="option-item">
+            <input type="radio" name="department" id="department">
+            <label for="Science"> Science</label>
+            <br><br>
+          </div>
+          <div class="option-item">
+            <input type="radio" name="department" id="">
+            <label for="">Commercial</label>
+            <br><br>
+          </div>
+
+          <div class="option-item">
+            <input type="radio" name="department" id="">
+            <label for="">Arts</label>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Subject Section -->
+      <div class="form-section">
+        <h4 class="section-heading">Choose Subject Combination</h4>
+        <span>Note:</span>
+        <div class="options" id="subjectCheckboxes">
+
+        </div>
+        </h4>
+      </div>
+
+      <!-- Target Score Section -->
+
+      <div class="form-section">
+        <h4 class="section-heading">Target Score</h4>
+        <div class="options">
+          <div class="option-item">
+            <input type="radio" name="jambScore" id="">
+            <label for="">200 - 240 +</label>
+            <br><br>
+          </div>
+          <div class="option-item">
+            <input type="radio" name="jambScore" id="">
+            <label for="">250 - 290 +</label>
+            <br><br>
+          </div>
+          <div class="option-item">
+            <input type="radio" name="jambScore" id="">
+            <label for="">300 - 340 +</label>
+            <br><br>
+          </div>
+          <div class="option-items">
+            <input type="radio" name="jambScore" id="">
+            <label for="">350 - 400</label>
+            <br><br>
+          </div>
+
+          <div class="option-item other">
+            <input type="radio" name="jambScore" id="">
+            <label for="">Others</label>
+            <input type="number" name="" id="customNumber" class="other-input">
+          </div>
+
+        </div>
+        </h4>
+      </div>
+
+      <!-- Study Preference Section -->
+
+      <div class="form-section">
+        <h4 class="section-heading">Study Preference</h4>
+
+        <div class="study-time">
+          <h5 class="section-heading">Study Time</h5>
+          <div class="options">
+            <div class="option-item"></div>
+            <input type="radio" name="studyTime" id="">
+            <label for="">Morning</label>
+            <br><br>
+            <div class="option-item"></div>
+            <input type="radio" name="studyTime" id="">
+            <label for="">Afternoon</label>
+            <br><br>
+            <div class="option-item"></div>
+            <input type="radio" name="studyTime" id="">
+            <label for="">Evening</label>
+          </div>
+        </div>
+
+        <div class="study-frequency">
+          <h4 class="section-heading">Study Frequency</h4>
+          <div class="options">
+            <div class="option-item">
+              <input type="radio" name="studyFrequency" id="daily">
+              <label for="daily">Daily</label>
+              <br><br>
+            </div>
+            <div class="option-item">
+              <input type="radio" name="studyFrequency" id="threeWeek">
+              <label for="threeWeek">3 Times Per Week</label>
+              <br><br>
+            </div>
+            <div class="option-item">
+              <input type="radio" name="studyFrequency" id="weekends">
+              <label for="weekends">Weekends Only</label>
+              <br><br>
+            </div>
+            <div class="option-item">
+              <input type="radio" name="studyFrequency" id="flexible">
+              <label for="flexible">Flexible</label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="submit-btn">Complete Setup</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(90deg, #bff196, 0%, #88b962 100%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sign-up-page {
+      background-color: #fff;
+      width: 70%;
+      padding: 1.2em 1.2em;
+      border: none;
+      border-radius: 0.5em;
+      margin: auto 0;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .form-box {
+      width: 40%;
+    }
+
+    .sign-up-image {
+      width: 50%;
+      height: 500px;
+
+    }
+
+    .sign-up-image>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .welcome-paragraph {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.3em;
+    }
+
+    .welcome-paragraph img {
+      width: 6.3rem;
+      height: 4.3rem;
+      object-fit: cover;
+    }
+
+    .welcome-paragraph-text-content {
+      padding-right: 2.5em;
+
+    }
+
+    .welcome-paragraph p {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+
+    label {
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding-bottom: 0.3em;
+
+    }
+
+
+    input {
+      width: 100%;
+      padding: 0.6em;
+      caret-color: #88b962;
+    }
+
+
+    input:focus {
+      border: 2px solid #0a730a;
+      outline: none;
+      border-radius: 10px;
+      box-shadow: none;
+    }
+
+
+    .pass-input-icon {
+      position: relative;
+    }
+
+    .password-field {
+      width: 100%;
+      padding-left: 0.5em;
+      height: 50px;
+    }
+
+  .toggle-password {
+      position: absolute;
+      top: 50%;
+      right: 0.7em;
+      transform: translateY(-50%);
+    }
+
+
+    .hide{
+      display: none;
+    }
+
+
+
+    .submit-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0.4em 1em;
+      background-color: #0a730a;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1.5em;
+      margin-bottom: 0.4em;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+
+    .inline-element {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 0.4em;
+    }
+
+    .inline-hr {
+      flex: 1;
+      border: none;
+      height: 1px;
+      background-color: #000;
+
+    }
+
+    .hr-inbetween {
+      padding: 0 0.5em;
+    }
+
+    .external-login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .external-login .google-apple {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 80%;
+      background: transparent;
+      color: #000;
+      border: solid #504f4f;
+      border-width: 0.07em;
+      border-radius: 10px;
+      padding: 0.3em 0.4em;
+      font-size: 1.3rem;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    .external-login button:first-child {
+      margin-bottom: 0.5em;
+    }
+
+    .external-login button>.goggle-logo {
+
+      width: 1.5rem;
+      height: 1.5rem;
+      object-fit: cover;
+    }
+
+    .external-login .apple-logo {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+
+    .log-in-direct {
+      display: inline-flex;
+      gap: 0.8rem;
+      padding-top: 0.3em;
+      font-size: 1.02rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      .sign-up-page-container {
+        width: 90%;
+        height: 90%;
+        padding: 0.3em 0.5em;
+      }
+
+      .sign-up-image {
+        display: none;
+      }
+
+      .form-box {
+        width: 100%;
+        height: 100%;
+      }
+
+
+      input {
+        width: 100%;
+      }
+
+      .external-login .google-apple {
+        width: 100%;
+      }
+
+
+
+    }
+
+
+    @media screen and (max-width: 375px) {
+      .sign-up-page-container {
+        width: 90%;
+      }
+
+      .sign-up-image {
+        display: none;
+      }
+
+      .form-box {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .log-in-image {
+        display: none;
+      }
+
+
+      .external-login .google-apple {
+        width: 100%;
+      }
+
+
+
+    }
+  

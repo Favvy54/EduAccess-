@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #bff196 0%, #88b962 100%);
+}
+
+.onboarding-container {
+  background-color: #fff;
+  width: 50%;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 0.5em;
+  margin: 1.3em auto;
+}
+.welcome-text {
+  text-align: center;
+  margin-bottom: 1.2em;
+  color: #000;
+  line-height: 1;
+  padding: 1.5em 0;
+}
+
+.welcome-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+
+.welcome-text p {
+  font-size: 1.5rem;
+}
+
+#onboardingForm {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-section {
+  margin-bottom: 2.5em;
+}
+
+.section-heading {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  color: #000;
+}
+
+label {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.other {
+  display: inline;
+}
+
+.other-input {
+  border-bottom: 2px solid black;
+  padding: 0.2em 0.5em;
+  margin-left: 0.5em;
+}
+
+.study-time {
+  margin-bottom: 2.5em;
+}
+/* 
+.study-frequency{
+  margin-bottom: 0.8em;
+} */
+
+.button-container {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.submit-btn {
+  background-color: #88b962;
+  color: #fff;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.7em 1.5em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduAccess Login Page</title>
+  <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/bootstrap/bootstrap-icons.css">
+  <link rel="stylesheet" href="./styles/log-in.css">
+
+
+</head>
+
+<body>
+  <div class="login-page">
+
+    <div class="welcome-paragraph">
+      <div class="logo-container">
+        <img src="Images/eduaccess-logo.png" alt="EduAccess Logo">
+      </div>
+      <div class="welcome-paragraph-text-content">
+        <h4 class="d-flex ms-auto">Welcome Back!!</h4>
+        <p>Sign in to enjoy well curated lessons designed for your success.</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="log-in-image">
+        <img src="Images/login-image.png" alt="Sign Up Image">
+      </div>
+      <div class="form-box">
+        <form action="#" id="logInForm">
+          <div class="userName">
+            <label for="userName">Username</label>
+            <input type="email" name="userName" id="userName" autocomplete="on" required aria-required="true">
+            <br><br>
+          </div>
+
+          <div class="passWord">
+            <label for="loginPassword">Password</label>
+            <div class="pass-input-icon">
+              <input type="password" name="password" id="loginPassword" class="password-field" autocompletew="on"
+                required aria-required="true" minlength="6" maxlength="12">
+              <span class="toggle-password show" id="showPassword"><i class="bi bi-eye"></i></span>
+
+              <span class="toggle-password hide" id="hidePassword"><i class="bi bi-eye-slash"></i></span>
+
+              <br>
+            </div>
+
+          </div>
+
+          <div class="remember-me-section">
+            <div class="checkbox-text">
+              <label for="checkbox"></label>
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <span>Remember me</span>
+
+            </div>
+
+            <a href="">Forgot password?</a>
+          </div>
+          <button type="button" class="submit-btn" id="loginBtn">Log In</button>
+          <div class="inline-element">
+            <hr class="inline-hr">
+            <span class="hr-inbetween">Or</span>
+            <hr class="inline-hr">
+          </div>
+
+        </form>
+        <div class="external-login">
+          <button href="" class="google-apple" type="button" id="goggleBtn">
+            <img src="/images/google-logo.png" alt="Google Logo" class="goggle-logo" id="googleLoginBtn">
+            <span>Sign in with google</span></button>
+          <a href="" class="google-apple">
+            <img src="/images/apple-logo.png" alt="Apple Logo" class="apple-logo">
+            <span>Sign in with apple</span>
+          </a>
+          <span class="sign-up-direct">Dont have an account ??<a href="sign-up.html">Sign up here</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="javascript/auth.js" defer></script>
+</body>
+
+</html>
