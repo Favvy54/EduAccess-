@@ -182,7 +182,7 @@ input[type='password']:focus {
   text-decoration: none;
 }
 
-.external-login a:first-child {
+.external-login button:first-child {
   margin-bottom: 0.5em;
 }
 
