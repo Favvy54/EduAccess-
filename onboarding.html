@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Complete Your Profile - EduAccess</title>
   <link rel="stylesheet" href="/styles/onboarding.css">
 </head>
 
 <body>
   <div class="onboarding-container">
     <div class="welcome-text">
-      <h2>Lets Personalize Your Learning Experience</h2>
+      <h2>Let's Personalize Your Learning Experience</h2>
       <p>Tell us about yourself to get started</p>
     </div>
+    
     <form action="#" id="onboardingForm">
 
       <!-- Department Section -->
@@ -21,91 +22,96 @@
         <h4 class="section-heading">Select Your Department</h4>
         <div class="options">
           <div class="option-item">
-            <input type="radio" name="department" id="department">
-            <label for="Science"> Science</label>
+            <input type="radio" name="stream" value="science" id="science" required>
+            <label for="science">Science</label>
             <br><br>
           </div>
           <div class="option-item">
-            <input type="radio" name="department" id="">
-            <label for="">Commercial</label>
+            <input type="radio" name="stream" value="commercial" id="commercial">
+            <label for="commercial">Commercial</label>
             <br><br>
           </div>
-
           <div class="option-item">
-            <input type="radio" name="department" id="">
-            <label for="">Arts</label>
+            <input type="radio" name="stream" value="arts" id="arts">
+            <label for="arts">Arts</label>
           </div>
-
-
         </div>
-
       </div>
 
-      <!-- Subject Section -->
+      <!-- Subject Section with Modal Selector -->
       <div class="form-section">
         <h4 class="section-heading">Choose Subject Combination</h4>
-        <span>Note:</span>
-        <div class="options" id="subjectCheckboxes">
-
+        <p class="compulsory-note">✓ Use of English (Compulsory)</p>
+        <p class="instruction">Select 3 more subjects:</p>
+        
+        <!-- Subject Selector Button -->
+        <div class="subject-selector-wrapper">
+          <button type="button" id="subjectSelectorBtn" class="subject-selector-btn">
+            <span id="selectedSubjectsDisplay">Click to select subjects</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <p class="subject-count" id="subjectCount">0/3 subjects selected</p>
         </div>
-        </h4>
+        
+        <!-- Hidden inputs to store selected subjects -->
+        <input type="hidden" id="subject1" name="subject1" required>
+        <input type="hidden" id="subject2" name="subject2" required>
+        <input type="hidden" id="subject3" name="subject3" required>
       </div>
 
       <!-- Target Score Section -->
-
       <div class="form-section">
         <h4 class="section-heading">Target Score</h4>
         <div class="options">
           <div class="option-item">
-            <input type="radio" name="jambScore" id="">
-            <label for="">200 - 240 +</label>
+            <input type="radio" name="targetScore" value="200-240" id="score200" required>
+            <label for="score200">200 - 240 +</label>
             <br><br>
           </div>
           <div class="option-item">
-            <input type="radio" name="jambScore" id="">
-            <label for="">250 - 290 +</label>
+            <input type="radio" name="targetScore" value="250-290" id="score250">
+            <label for="score250">250 - 290 +</label>
             <br><br>
           </div>
           <div class="option-item">
-            <input type="radio" name="jambScore" id="">
-            <label for="">300 - 340 +</label>
+            <input type="radio" name="targetScore" value="300-340" id="score300">
+            <label for="score300">300 - 340 +</label>
             <br><br>
           </div>
-          <div class="option-items">
-            <input type="radio" name="jambScore" id="">
-            <label for="">350 - 400</label>
+          <div class="option-item">
+            <input type="radio" name="targetScore" value="350-400" id="score350">
+            <label for="score350">350 - 400</label>
             <br><br>
           </div>
-
           <div class="option-item other">
-            <input type="radio" name="jambScore" id="">
-            <label for="">Others</label>
-            <input type="number" name="" id="customNumber" class="other-input">
+            <input type="radio" name="targetScore" value="custom" id="scoreCustom">
+            <label for="scoreCustom">Others</label>
+            <input type="number" id="customScore" class="other-input" placeholder="" min="0" max="400" style="display:none;">
           </div>
-
         </div>
-        </h4>
       </div>
 
       <!-- Study Preference Section -->
-
       <div class="form-section">
         <h4 class="section-heading">Study Preference:</h4>
 
         <div class="study-time">
           <h5 class="section-heading">Study Time</h5>
           <div class="options">
-            <div class="option-item"></div>
-            <input type="radio" name="studyTime" id="">
-            <label for="">Morning</label>
-            <br><br>
-            <div class="option-item"></div>
-            <input type="radio" name="studyTime" id="">
-            <label for="">Afternoon</label>
-            <br><br>
-            <div class="option-item"></div>
-            <input type="radio" name="studyTime" id="">
-            <label for="">Evening</label>
+            <div class="option-item">
+              <input type="radio" name="studyTime" value="morning" id="morning" required>
+              <label for="morning">Morning</label>
+              <br><br>
+            </div>
+            <div class="option-item">
+              <input type="radio" name="studyTime" value="afternoon" id="afternoon">
+              <label for="afternoon">Afternoon</label>
+              <br><br>
+            </div>
+            <div class="option-item">
+              <input type="radio" name="studyTime" value="evening" id="evening">
+              <label for="evening">Evening</label>
+            </div>
           </div>
         </div>
 
@@ -113,33 +119,62 @@
           <h4 class="section-heading">Study Frequency</h4>
           <div class="options">
             <div class="option-item">
-              <input type="radio" name="studyFrequency" id="daily">
+              <input type="radio" name="studyFrequency" value="daily" id="daily" required>
               <label for="daily">Daily</label>
               <br><br>
             </div>
             <div class="option-item">
-              <input type="radio" name="studyFrequency" id="threeWeek">
+              <input type="radio" name="studyFrequency" value="3xweek" id="threeWeek">
               <label for="threeWeek">3 Times Per Week</label>
               <br><br>
             </div>
             <div class="option-item">
-              <input type="radio" name="studyFrequency" id="weekends">
+              <input type="radio" name="studyFrequency" value="weekends" id="weekends">
               <label for="weekends">Weekends Only</label>
               <br><br>
             </div>
             <div class="option-item">
-              <input type="radio" name="studyFrequency" id="flexible">
+              <input type="radio" name="studyFrequency" value="flexible" id="flexible">
               <label for="flexible">Flexible</label>
             </div>
           </div>
-
         </div>
       </div>
+
       <div class="button-container">
         <button type="submit" class="submit-btn">Complete Setup</button>
       </div>
     </form>
   </div>
+  
+  <!-- Subject Selection Modal -->
+  <div id="subjectModal" class="subject-modal" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Select Your Subjects</h3>
+        <button type="button" class="modal-close" id="closeModalBtn">×</button>
+      </div>
+      
+      <div class="modal-search">
+        <input type="text" id="subjectSearch" placeholder="Search subjects..." class="search-input">
+      </div>
+      
+      <div class="modal-info">
+        <p>Select 3 subjects (Use of English is compulsory)</p>
+        <p class="selection-count"><span id="modalSubjectCount">0</span>/3 selected</p>
+      </div>
+      
+      <div class="modal-subjects" id="modalSubjectsList">
+        <!-- Subjects will be populated by JavaScript -->
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="modal-done-btn" id="doneBtn">Done</button>
+      </div>
+    </div>
+  </div>
+  
   <script type="module" src="javascript/onboarding.js"></script>
 </body>
 
