@@ -103,7 +103,7 @@
 
 .progress-bar {
   width: 100%;
-  border: inset;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
   border-radius: 10px;
   background-color: var(--progress-bg);
   height: 1rem;
@@ -112,7 +112,6 @@
 .progress {
   width: 20%;
   height: 100%;
-  border: none;
   border-radius: 10px;
 }
 
